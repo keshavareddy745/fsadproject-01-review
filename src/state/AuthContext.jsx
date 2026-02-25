@@ -19,7 +19,7 @@ export function AuthProvider({ children }) {
 
   const logout = () => {
     setRole(null)
-    navigate('/login')
+    navigate('/')
   }
 
   const value = useMemo(() => ({ role, login, logout }), [role])

@@ -6,11 +6,7 @@ export default function NavBar() {
   return (
     <header className="navbar simple">
       <nav className="links">
-        
-        <Link to="/citizen">Citizen</Link>
-        <Link to="/politician">Politician</Link>
-        <Link to="/moderator">Moderator</Link>
-        <Link to="/admin">Admin</Link>
+        <Link to="/">Home</Link>
         {!role && <Link to="/login">Login</Link>}
         {role && <button className="link-like" onClick={logout}>Logout</button>}
       </nav>
